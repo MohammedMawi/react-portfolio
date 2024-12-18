@@ -1,0 +1,21 @@
+body{
+    /* font-family: myFont; */
+    background-color: #151515;
+    color: white;
+    margin-bottom: 100px;
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: myFont3;
+    src: url(fonts/Rubik-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(fonts/Rubik-Black.ttf);
+}

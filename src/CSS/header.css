@@ -1,0 +1,134 @@
+.header{
+    font-family: 'myFont3';
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.proj{
+    position: relative;
+    margin-left: 40px;
+    font-size: 30px;
+    cursor: pointer;
+
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.proj:hover {
+    color: rgb(112, 2, 254); /* Change text color to purple on hover */
+    letter-spacing: 5px; /* Add letter spacing on hover */
+}
+
+.proj:after{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    border: 3px solid rgb(112, 2, 254);
+    width: 30%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.proj:hover:after{
+    width: 100%;
+}
+
+.email{
+    position: relative;
+    margin-left: 100px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.email:before {
+    content: "Contact";
+    transition: color 0.3s ease;
+}
+
+.email:hover:before {
+    font-size: 20px;
+    color: rgb(112, 2, 254);
+    content: "mohammedmawi@gmail.com";
+}
+
+.email:after{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    border: 3px solid rgb(112, 2, 254);
+    width: 30%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.email:hover:after{
+    width: 100%;
+}
+
+.econtain {
+    position: relative;
+}
+
+.econtain .tooltip{
+    position: absolute;
+    background-color: rgb(112, 2, 254, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+
+    color: white;
+
+    font-size: 13px;
+    bottom: -80px;
+    left: 200px;
+
+    pointer-events: none;
+
+    transition: opacity 0.1s ease;
+
+
+    /* Hide the tooltip by default */
+    /* you can use either opacity or visibility to hide the tooltip. I used both for demonstration purposes to show that they both work and do the same thing. */
+    opacity: 0;
+}
+
+/* Show the tooltip when the .show class is added */
+.tooltip.show {
+    /* Make the tooltip visible */
+    opacity: 1;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+}
+
+.git{
+    height: 35px;
+    margin-right: 30px;
+    cursor: pointer;
+
+    transition: opacity 0.1s ease;
+}
+
+.git:hover{
+    opacity: 0.5;
+}
+
+.in{
+    height: 35px;
+    margin-right: 40px;
+    cursor: pointer;
+
+    transition: opacity 0.1s ease;
+}
+
+.in:hover{
+    opacity: 0.5;
+}
