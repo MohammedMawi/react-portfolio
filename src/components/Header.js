@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import '../CSS/header.css';
 import githubIcon from '../images/github.png';
 import linkedinIcon from '../images/linkedin.png';
 
-export default function Header(){
+export default function Header({scrollToProjects}){
 
   //creating a boolean state variable (default false) to show the tooltip
   const [tooltipShow, setTooltipShow] = useState(false);
@@ -27,7 +27,7 @@ export default function Header(){
 
       {/* Left side with Projects and Email */}
       <div className="left">
-        <div className="proj">
+        <div className="proj" onClick={scrollToProjects}>
             <span>Projects</span>
         </div>
         

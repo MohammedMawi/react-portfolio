@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
@@ -29,36 +30,52 @@ import './CSS/general.css';
 // }
 
 function App(){
+  const titleRef = useRef(null);
+
+  const scrollToProjects = () => {
+    titleRef.current.scrollIntoView({ behavior: 'smooth' }); // Use the ref to scroll
+  };
+
   return (
     <div className="App">
-      <Header />
+      <Header scrollToProjects={scrollToProjects}/>
       <Hero />
       <Skills />
-      <div class="projects">
-        <Projects 
-          name = "Live Flower"
-          link="https://github.com/MohammedMawi/Live-Flower-Interactive-Arduino-Project"
-          pic = {`${flower}`}
-          language = "C++"
-          description = "A collaborative project creating a dynamic flower utilizing Arduino Uno and its components"
-        />
+      
+      <>
+        <div class="contain">
+          <span class="title" ref={titleRef}>My Projects</span>
+        </div>
 
-        <Projects 
-          name = "Don't Touch The Spikes"
-          link="https://github.com/MohammedMawi/Dont-Touch-The-Spikes"
-          pic = {`${spikes}`}
-          language = "Java"
-          description = "Remake of Ketchapp's mobile game 'Don't Touch The Spikes' using Java and Processing libraries"
-        />
+        <div class="projects">
+          <Projects 
+            name = "Live Flower"
+            link="https://github.com/MohammedMawi/Live-Flower-Interactive-Arduino-Project"
+            pic = {`${flower}`}
+            language = "C++"
+            description = "A collaborative project creating a dynamic flower utilizing Arduino Uno and its components"
+          />
 
-        <Projects 
-          name = "Discord Bot"
-          link="https://github.com/MohammedMawi/Discord-Bot"
-          pic = {`${discord}`}
-          language = "Python"
-          description = "Custom interactive Discord bot to give using Python and the Discord API"
-        />
-      </div>
+          <Projects 
+            name = "Don't Touch The Spikes"
+            link="https://github.com/MohammedMawi/Dont-Touch-The-Spikes"
+            pic = {`${spikes}`}
+            language = "Java"
+            description = "Remake of Ketchapp's mobile game 'Don't Touch The Spikes' using Java and Processing libraries"
+          />
+
+          <Projects 
+            name = "Discord Bot"
+            link="https://github.com/MohammedMawi/Discord-Bot"
+            pic = {`${discord}`}
+            language = "Python"
+            description = "Custom interactive Discord bot to give using Python and the Discord API"
+          />
+        </div>
+      </>
+      
+
+
     </div>
   );
 }
