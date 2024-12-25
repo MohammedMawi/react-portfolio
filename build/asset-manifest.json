@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.31b685ad.css",
+    "main.js": "/react-portfolio/static/js/main.b317c2cd.js",
+    "static/js/488.15c117bb.chunk.js": "/react-portfolio/static/js/488.15c117bb.chunk.js",
+    "static/media/Rubik-Bold.ttf": "/react-portfolio/static/media/Rubik-Bold.c934eb22c2c69992b34c.ttf",
+    "static/media/Rubik-ExtraBold.ttf": "/react-portfolio/static/media/Rubik-ExtraBold.1ab45dd33fc066882b45.ttf",
+    "static/media/Rubik-Black.ttf": "/react-portfolio/static/media/Rubik-Black.a41b3ae4e67200950946.ttf",
+    "static/media/flower.jpg": "/react-portfolio/static/media/flower.74808b49a2aca2a559cf.jpg",
+    "static/media/Discord.png": "/react-portfolio/static/media/Discord.7226caa4f9f01937dac0.png",
+    "static/media/spikes.png": "/react-portfolio/static/media/spikes.684aa57f1c4f94ea08c2.png",
+    "static/media/linkedin.png": "/react-portfolio/static/media/linkedin.5477e4bd461c99c39e48.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.31b685ad.css.map": "/react-portfolio/static/css/main.31b685ad.css.map",
+    "main.b317c2cd.js.map": "/react-portfolio/static/js/main.b317c2cd.js.map",
+    "488.15c117bb.chunk.js.map": "/react-portfolio/static/js/488.15c117bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31b685ad.css",
+    "static/js/main.b317c2cd.js"
+  ]
+}
