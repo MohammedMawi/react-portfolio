@@ -10,7 +10,7 @@ export default function Hero(){
         {/* Name and Resume */}
         <div class="info">
             <h1 class="name">Mohammed <br/> Mawi</h1>
-            <a href="Mohammed Mawi - Resume.pdf" target="_blank">
+            <a href="\Mohammed Mawi - Resume.pdf" target="_blank">
                 <button class="resume">Resume</button>
             </a>
         </div>
