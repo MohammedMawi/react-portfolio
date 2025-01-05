@@ -1,5 +1,6 @@
 import React from 'react';
 import '../CSS/hero.css';
+import resume from '../images/Resume.pdf';
 // import '../CSS/general.css';
 
 export default function Hero(){
@@ -10,7 +11,7 @@ export default function Hero(){
         {/* Name and Resume */}
         <div class="info">
             <h1 class="name">Mohammed <br/> Mawi</h1>
-            <a href="Resume.pdf" target="_blank">
+            <a href={resume} target="_blank">
                 <button class="resume">Resume</button>
             </a>
         </div>
