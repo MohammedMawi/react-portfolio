@@ -5,7 +5,9 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import flower from './images/flower.jpg';
 import spikes from './images/spikes.png';
-import discord from './images/Discord.png'
+import discord from './images/Discord.png';
+import graph from './images/graph.jpg';
+import house from './images/house.jpg';
 import './CSS/general.css';
 
 // function App() {
@@ -48,6 +50,22 @@ function App(){
         </div>
 
         <div class="projects">
+        <Projects 
+          name = "Data Analyzer"
+          link="https://github.com/MohammedMawi/Data-Analyzer"
+          pic = {`${graph}`}
+          language = "React/Flask"
+          description = "Full-stack data analysis tool that allows users to upload CSV datasets and interactively explore statistics, correlations, and visualizations"
+        />
+
+        <Projects 
+          name = "House Price Predictor"
+          link="https://github.com/MohammedMawi/House-Price-Predictor/tree/main"
+          pic = {`${house}`}
+          language = "Python"
+          description = "Developed a regression model to predict house prices using structured housing data."
+        />
+
           <Projects 
             name = "Live Flower"
             link="https://github.com/MohammedMawi/Live-Flower-Interactive-Arduino-Project"
