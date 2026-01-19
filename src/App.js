@@ -45,11 +45,11 @@ function App(){
       <Skills />
       
       <>
-        <div class="contain">
-          <span class="title" ref={titleRef}>My Projects</span>
+        <div className="contain">
+          <span className="title" ref={titleRef}>My Projects</span>
         </div>
 
-        <div class="projects">
+        <div className="projects">
         <Projects 
           name = "Data Analyzer"
           link="https://github.com/MohammedMawi/Data-Analyzer"

@@ -42,14 +42,14 @@ export default function Header({scrollToProjects}){
       </div>
 
       {/* Right side with github and linkedin */}
-      <div class="right">
+      <div className="right">
         <div>
-            <a href="https://github.com/MohammedMawi" target="_blank">
-                <img class="git" src={githubIcon} alt="GitHub"/>
+            <a href="https://github.com/MohammedMawi" target="_blank" >
+                <img className="git" src={githubIcon} alt="GitHub"/>
             </a>
 
             <a href="https://www.linkedin.com/in/mohammed-mawi-581635262/" target="_blank">
-                <img class="in" src={linkedinIcon} alt="LinkedIn"/>
+                <img className="in" src={linkedinIcon} alt="LinkedIn"/>
             </a>
             
         </div>

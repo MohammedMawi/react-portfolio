@@ -9,16 +9,16 @@ export default function Hero(){
     <div class="main">
 
         {/* Name and Resume */}
-        <div class="info">
-            <h1 class="name">Mohammed <br/> Mawi</h1>
-            <a href={resume} target="_blank">
-                <button class="resume">Resume</button>
+        <div className="info">
+            <h1 className="name">Mohammed <br/> Mawi</h1>
+            <a href={resume} target="_blank" rel="noreferrer">
+                <button className="resume">Resume</button>
             </a>
         </div>
 
         {/* About me */}
-        <div class="about">
-            <h2 class="abtext">
+        <div className="about">
+            <h2 className="abtext">
                 Hello! I am a student in the 
                 Computer Science Honours 
                 program at York University. 

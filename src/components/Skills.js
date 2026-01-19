@@ -3,11 +3,11 @@ import '../CSS/languages.css';
 
 export default function Skills() {
     return(
-        <div class="skills">
-        <div class="lang">
-            <h1>Languages<span class="slash">/</span>Tools</h1>
+        <div className="skills">
+        <div className="lang">
+            <h1>Languages<span className="slash">/</span>Tools</h1>
 
-            <div class="list">
+            <div className="list">
                 <span>React</span>
                 <span>Javascript</span>
                 <span>Java</span>
