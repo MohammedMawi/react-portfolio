@@ -6,7 +6,7 @@ import resume from '../images/Resume.pdf';
 export default function Hero(){
   return (
     // Main 
-    <div class="main">
+    <div className="main">
 
         {/* Name and Resume */}
         <div className="info">

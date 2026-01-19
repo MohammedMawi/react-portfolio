@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import {useState} from 'react';
 import '../CSS/header.css';
 import githubIcon from '../images/github.png';
 import linkedinIcon from '../images/linkedin.png';
@@ -44,11 +44,11 @@ export default function Header({scrollToProjects}){
       {/* Right side with github and linkedin */}
       <div className="right">
         <div>
-            <a href="https://github.com/MohammedMawi" target="_blank" >
+            <a href="https://github.com/MohammedMawi" target="_blank" rel="noreferrer">
                 <img className="git" src={githubIcon} alt="GitHub"/>
             </a>
 
-            <a href="https://www.linkedin.com/in/mohammed-mawi-581635262/" target="_blank">
+            <a href="https://www.linkedin.com/in/mohammed-mawi-581635262/" target="_blank" rel="noreferrer">
                 <img className="in" src={linkedinIcon} alt="LinkedIn"/>
             </a>
             

@@ -5,9 +5,9 @@ export default function Projects(props) {
     return(
         <>
             <div className="example">
-                <div class="thumb">
+                <div className="thumb">
                     <a href={`${props.link}`} target="_blank" rel="noreferrer">
-                        <img class="pic" src={`${props.pic}`} alt="" />
+                        <img className="pic" src={`${props.pic}`} alt="" />
                     </a>
                 </div>
 
